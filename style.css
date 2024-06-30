@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #fff3e0, #ffe0b2); /* Saffron gradient */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(#FF5722, #FF9800); /* gradient */
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FF9800;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Blog Posts Styles */
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#posts article {
+    background: white;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#posts article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#posts h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.2em;
+    color: #FF5722; 
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#posts p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
+#posts img, #posts video {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* About Me Styles */
+#about {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.8em;
+    color: #FF5722; 
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+/* Contact Styles */
+#contact {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.8em;
+    color: #FF5722;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #FF5722; 
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #FF9800; 
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#contact li {
+    display: inline;
+}
+
+#contact li a {
+    color: #FF5722; 
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+#contact li a:hover {
+    color: #FF9800; 
+}
+
+#contact form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+#contact input, #contact textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #FF5722; 
+    outline: none;
+}
+
+#contact button {
+    background-color: #FF5722; 
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #FF9800;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #FF5722; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF9800;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    header, #posts, #about, #contact, footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #posts article {
+        max-width: 100%;
+        margin: 15px 10px;
+    }
+}
